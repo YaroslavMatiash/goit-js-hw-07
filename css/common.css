@@ -1,3 +1,5 @@
+/* Main */
+
 * {
   box-sizing: border-box;
 }
@@ -11,4 +13,145 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* Task-1 */
+
+.main-list {
+  border-radius: 8px;
+  padding: 24px;
+  width: 440px;
+  height: 888px;
+
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.list-title {
+  padding-bottom: 24px;
+}
+
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+
+  background: #f6f6fe;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list-item {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+
+  padding: 8px 16px;
+}
+
+.item h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.item ul {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* Task-2 */
+
+.gallery {
+  width: 1440px;
+
+  background: #fff;
+
+  display: flex;
+  gap: 32px 16px;
+  flex-wrap: wrap;
+  padding: 100px 156px;
+}
+
+.gallery li img {
+  width: 360px;
+  height: 300px;
+}
+
+/* Task-3 */
+
+.text-field {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 136px;
+
+  background: #fff;
+}
+
+.greetings {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  padding-top: 16px;
+}
+
+.input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
