@@ -1,0 +1,37 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const loginForm = document.querySelector('.login-form');
+
+  loginForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const emailInput = this.elements.email;
+    const passwordInput = this.elements.password;
+
+    const emailValue = emailInput.value.trim();
+    const passwordValue = passwordInput.value.trim();
+
+    if (!emailValue || !passwordValue) {
+      alert('All form fields must be filled in');
+      return;
+    }
+
+    const formData = {
+      email: emailValue,
+      password: passwordValue,
+    };
+
+    console.log(formData);
+
+    loginForm.reset();
+  });
+});
+
+const input = document.querySelector('.login-input');
+
+input.addEventListener('mousedown', function () {
+  this.setAttribute('placeholder', 'Type area');
+});
+
+input.addEventListener('focus', function () {
+  this.removeAttribute('placeholder');
+});
